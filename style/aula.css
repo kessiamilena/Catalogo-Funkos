@@ -1,0 +1,454 @@
+p, a, h2{
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+h2 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 35px;
+    padding: 10px 0;
+}
+
+.p2 {
+    font-weight: 900;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.button {
+    color: white;
+    background-image: linear-gradient(to bottom, #fe7467, #fc3836);
+    border: none;
+    font-weight: 900;
+    padding: 15px 30px;
+}
+
+/* Header */
+
+header {
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+}
+
+header.headerHome {
+    background-image: url(../img/spidermanheader.jpg);
+}
+
+header.headerCatalogue {
+    background-image: url(../img/captainmarvelheader.jpg);
+}
+
+header.headerContact {
+    background-image: url(../img/contatoheader.jpg);
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    margin: 0;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+nav a.currentPage {
+    border-bottom: 3px solid #fe7467;
+}
+
+nav ul {
+   display: flex; 
+   list-style: none;
+}
+
+nav ul li {
+     
+    margin-left: 20px;
+}
+
+nav ul li a:hover {
+    color: rgb(173, 173, 173);
+}
+
+
+header .headerImgSpiderman {
+    max-width: 320px;
+    height: auto;
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+
+header .headerImgCaptainMarvel {
+    max-width: 500px;
+    height: auto;
+    position: relative;
+    top: 370px;
+    left: 200px;
+}
+
+header .headerImgContact {
+    max-width: 450px;
+    height: auto;
+    position: relative;
+    top: 330px;
+    left: 200px;
+}
+
+/* Main */
+/** Home **/
+/*** Section Who We Are ***/
+
+section.sectionWhoWeAre {
+    padding: 20px;
+    background-image: url(../img/thor_header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+}
+
+h2.titleWhoWeAre {
+    color: white;
+}
+
+h2.titleWhoWeAre::after {
+    display: block;
+    content: '';
+    width: 200px;
+    height: 3px;
+    margin: 12px auto;
+    background-color: white;
+}
+
+
+p.textWhoWeAre {
+    color: white;
+    font-size: 15px;
+    width: 500px;
+    margin: 80px 750px;
+}
+
+/* Section Catalogue */
+
+img.sectionCatalogueImg {
+    width: 700px;
+    height: auto;
+    margin-right: 40px;
+}
+
+h2.sectionCatalogueTitle::after {
+    display: block;
+    content: '';
+    width: 160px;
+    height: 3px;
+    margin: 12px auto;
+    background-color: #fe7467;
+}
+
+p.sectionCatalogueText {
+    font-size: 18px;
+    width: 500px;
+    margin-bottom: 30px;
+   /* margin: 80px 800px; */
+}
+
+.sectionCatalogueButton {
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.sectionCatalogue {
+    display: grid;
+}
+
+/* MAIN */
+/** Catalogue **/
+
+h2.titleCatalogue::after {
+    display: block;
+    content: '';
+    width: 160px;
+    height: 3px;
+    margin: 12px auto;
+    background-color: #fe7467;
+}
+
+.catalogueButton  {
+    border-radius: 20px;
+}
+
+main {
+    margin-bottom: 80px;
+}
+
+.divCtlg {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.catalogueProd .list .divProd .catalogueProductImg {
+    width: 100%;
+}
+
+.divProd div{
+    padding: 0 2em;
+}
+
+.divProd div p{
+    text-align: justify;
+}
+
+.divProd{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.list {
+    padding: 2em;
+}
+
+
+/* SECTION CONTACT */
+
+h2.titleContact::after {
+    display: block;
+    content: '';
+    width: 160px;
+    height: 3px;
+    margin: 12px auto;
+    background-color: #fe7467;
+}
+
+
+p.textContact {
+    font-size: 15px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* FORMULARIO */
+
+form{
+    margin-left: 30%;
+    margin-top: 50px;
+}
+
+
+.input {
+    display: grid;
+    float: left;
+    margin: auto;
+}
+
+
+#inputName {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 5px 45px;
+    border-radius: 5px ;
+    border-color: rgba(156, 155, 155, 0.61);
+}
+#inputEmail {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 5px 45px;
+    border-radius: 5px ;
+    border-color: rgba(156, 155, 155, 0.61);
+}
+#inputTel {
+    float: flex;
+    margin-bottom: 20px;
+    padding: 5px 45px;
+    border-radius: 5px ;
+    border-color: rgba(156, 155, 155, 0.61);
+}
+
+#inputComment {
+    width: 232px;
+    height: 124px;
+    margin-left: 20px;
+    padding: 1px 20px;
+    border-radius: 5px;
+}
+
+form .contactButton {
+    margin-right: 50%;
+}
+
+.contactButton {
+    margin-top: 10px;
+    padding: 8px 250px;
+    border-radius: 20px;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+
+    /* HEADER */
+
+    nav {
+        align-items: center;
+        flex-flow: column wrap;
+    }
+
+    nav ul {
+        padding-left: 0;
+    }
+
+    .logo {
+        max-width: 150px;
+        height: auto;
+    }
+
+    header {
+        padding: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 450px;
+    }
+
+    header.headerHome {
+        background-image: url(../img/spidermanheader_mobile.jpg);
+    }
+
+    header.headerCatalogue {
+        background-image: url(../img/captainmarvelheader_Mobile.jpg);
+    }
+
+    header.headerContact {
+        background-image: url(../img/contatoheader_mobile.jpg);
+    }
+
+    header .headerImgSpiderman {
+        max-width: 150px;
+        top: 150px;
+        left: 20px;
+    }
+
+    header .headerImgCaptainMarvel {
+        display: none;
+    }
+
+
+    /* SECTION Who We Are */
+
+    section.sectionWhoWeAre {
+        background-image: linear-gradient(to bottom, #fe7467, #fc3836);
+        min-height: 0px;
+        display: grid;
+    }    
+
+    p.textWhoWeAre {
+        font-size: 12px;
+        width: 300px;
+        margin: auto;
+        text-align: center;
+    }
+
+    /* SECTION Catalogue */
+
+    .divCtlg {
+        flex-flow: column wrap;
+        display: flex;
+    }
+
+    img.sectionCatalogueImg {
+        order: 2;
+        margin-right: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    p.sectionCatalogueText {
+        font-size: 12px;
+        width: 300px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .divCtlg2 {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    a.button.sectionCatalogueButton {
+        width: 150px;
+        height: auto;
+        margin: auto;
+        text-align: center;
+    }
+
+
+    /* MAIN Catalogue */
+
+     .divProd {
+         flex-flow: column wrap;
+     }
+
+     .divProd div {
+        margin-top: 3em;
+     }
+
+     .button {
+        padding: 10px 20px;
+        font-size: 0.8em;
+     }
+
+    /* CONTACT */
+    .headerImgContact {
+        display: none;
+    }
+
+    h2 {
+    font-size: 15px;
+    }
+
+    p.textContact {
+        font-size: 13px;
+        width: 250px;
+        font-weight: 500;
+    }
+
+    form {
+    margin-left: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    border: none;
+    align-items: center;
+    }
+
+    #inputComment {
+        width: 220px;
+        height: auto;
+        margin-left: 0;
+        padding: 1px 20px;
+        border-radius: 5px;
+    }
+
+    form .contactButton {
+        margin-right: 0;
+    }
+
+    .contactButton {
+        padding: 8px 60px;
+    }
+}
