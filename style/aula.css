@@ -137,7 +137,7 @@ p.textWhoWeAre {
     color: white;
     font-size: 15px;
     width: 500px;
-    margin: 80px 750px;
+    margin: 80px 780px;
 }
 
 /* Section Catalogue */
@@ -161,7 +161,6 @@ p.sectionCatalogueText {
     font-size: 18px;
     width: 500px;
     margin-bottom: 30px;
-   /* margin: 80px 800px; */
 }
 
 .sectionCatalogueButton {
@@ -244,50 +243,60 @@ p.textContact {
 /* FORMULARIO */
 
 form{
-    margin-left: 30%;
+    margin-left: 0;
     margin-top: 50px;
+    display: grid;
+    grid-template-areas:
+    'input comment'
+    'button button';
+    border: none;
+    justify-content: center;
 }
 
 
 .input {
-    display: grid;
-    float: left;
-    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    margin-right: 10px;
+    grid-area: input;
+}
+
+.comment {
+    grid-area: comment;
 }
 
 
 #inputName {
-    display: flex;
-    margin-bottom: 20px;
-    padding: 5px 45px;
-    border-radius: 5px ;
-    border-color: rgba(156, 155, 155, 0.61);
-}
-#inputEmail {
-    display: flex;
-    margin-bottom: 20px;
-    padding: 5px 45px;
-    border-radius: 5px ;
-    border-color: rgba(156, 155, 155, 0.61);
-}
-#inputTel {
-    float: flex;
     margin-bottom: 20px;
     padding: 5px 45px;
     border-radius: 5px ;
     border-color: rgba(156, 155, 155, 0.61);
 }
 
+#inputEmail {
+    margin-bottom: 20px;
+    padding: 5px 45px;
+    border-radius: 5px ;
+    border-color: rgba(156, 155, 155, 0.61);
+}
+
+#inputTel {
+    margin-bottom: 20px;
+    padding: 5px 45px;
+    border-radius: 5px ;
+    border-color: rgba(156, 155, 155, 0.61);
+}
+
+
 #inputComment {
-    width: 232px;
-    height: 124px;
-    margin-left: 20px;
+    margin-left: 0px;
     padding: 1px 20px;
     border-radius: 5px;
 }
 
 form .contactButton {
-    margin-right: 50%;
+    margin-right: 0;
+    grid-area: button;
 }
 
 .contactButton {
